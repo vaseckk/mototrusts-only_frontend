@@ -1,0 +1,726 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    max-width: 1980px;
+}
+
+/*LOVERING*/
+
+.lovering {
+    line-height: 1.5;
+    font-size: 1rem;
+
+}
+
+.love {
+    display: flex; /*Для того, чтобы все слова шли в одну строчку, а не в разброс*/
+    align-items: center; /*меню становится по центру блока*/
+    justify-content: space-between; /*слова находятся в разных сторонах*/
+    padding: 10px 0px 10px 0px; /*30 - отступы верх низ; 15 - лево право*/
+    box-sizing: border-box;
+    max-width: 1500px; /*чтобы у них был размер, с которого они начинают писать*/
+    margin: 0 auto; /*Для автоматического вычисления под размер компа лево-право*/
+}
+
+.love a {
+    color: rgb(24, 78, 47);
+    text-decoration: none;
+}
+
+.loveme {
+    display: flex;
+    list-style: none; /*пропадают маркеры  из списка*/
+}
+
+.loveme li {
+    margin-left: 50px;
+}
+
+.loveme li a {
+    color: rgb(24, 78, 47);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.loveme li a:hover { /*Для замены цвета при наводе*/
+    color: black;
+    transition: color .2s linear; /*Более плавная замена цвета*/
+}
+
+/*MAF*/
+
+.maf {
+    background: url("../css/image1/magecss.jpg") center center no-repeat;
+    background-size: cover; /*так изображение, если оно меньше ширины экрана, подстраивается под нужную ширину*/
+    padding: 75px 0 150px 0; /*75 верх 0 лево 150 низ 0 право*/
+}
+
+.mafpic {
+    color: rgb(247, 228, 206);
+    text-align: center;
+    max-width: 1080px; /*максимальное разрешение компа*/
+    max-height: 1980px;
+    min-width: 320px; /*Минимальная ширина телефона*/
+    margin: 0 auto; /*ОБЯЗАТЕЛЬНАЯ ХЕРНЯ, для отцентрирования*/
+    padding: 80px 15px; /*когда сужаешь экран остаётся отступ, текст не прилипает к экрану*/
+    box-sizing: border-box;
+}
+
+.mafsai {
+    padding: 0px;
+    font-weight: 400; /*Жирность обводки элементов*/
+    line-height: 3rem; /*Высота между словами*/
+    margin-bottom: 153px; /*Отступы от других слов снизу*/
+    font-size: 55px;/*Размер шрифта*/
+
+    /*js*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.mafsai._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.mafsay {
+    padding: 50px;
+    font-weight: 300;
+    line-height: 2.1rem;
+    margin-bottom: 40px;
+    font-size: 35px;
+
+    /*js*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.2s;
+}
+
+.mafsay._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.mafsak {
+    font-weight: 300;
+    line-height: 2.1rem;
+    margin-bottom: 40px;
+    font-size: 35px;
+
+    /*js*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0.4s;
+}
+
+.mafsak._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+/* Help */
+
+.help-content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.help-content div {
+    padding: 20px;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    border-radius: 20px;
+    width: 25%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.help-content div img {
+    height: 24px;
+    display: block;
+    margin-bottom: 15px;
+
+}
+
+.help-content div p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    margin-bottom: 35px;
+}
+
+.help-number {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #140A32;
+    display: block;
+}
+
+.help-button {
+    color: #33836E;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/*MYR*/
+
+.myrsect {
+    font-family: 'Cinzel', serif;
+}
+
+.myrdiv {
+    text-align: center; /*ещё одно отцентрирование по бокам*/
+    margin: 0 auto;
+    display: block; /*строки находятся друг над другом*/
+    color: #28564a;
+    box-sizing: border-box;
+    padding: 50px 10px 10px 10px;
+}
+
+.myrsay {
+    font-weight: 500;
+    line-height: 5rem;
+    font-size: 30px;
+
+    /*js*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.myrsay._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.myrtext {
+    font-weight: 500;
+    font-size: 29px;
+
+    /*js*/
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.myrtext._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+/*CONTINUED*/
+
+.continued {
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.myrcnt {
+    display: flex;
+    box-sizing: border-box;
+    position: relative; /*потому что иконка будет расположена относительно текста*/
+    padding-left: 90px;
+}
+
+
+
+.myrimg {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+}
+
+.myrimg1 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+}
+
+.myrimg2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+}
+
+.myrcnt1 {
+    flex: 1 1 0;
+    padding: 0px 10px 0 0px;   
+        /*js*/
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s; 
+}
+
+.myrcnt1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.cnt1title {
+    font-size: 25px;
+    color: #162017;
+    margin-bottom: 10px;
+
+        /*js*/
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+}
+
+.cnt1title._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+/*POVTOR*/
+
+.myrcntt {
+    display: flex;
+    box-sizing: border-box;
+    position: relative; /*потому что иконка будет расположена относительно текста*/
+    padding: 10px 90px 0px 90px;
+}
+
+.myrimg {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+}
+
+.myrimg1 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+}
+
+.myrcnt11 {
+    flex: 1 1 0;
+    padding: 0px 10px 0 0px;    
+}
+
+.cnt1titlee {
+    font-size: 25px;
+    color: #162017;
+    margin-bottom: 10px;
+}
+.cnt1textt {
+    color: #162017;
+    font-size: 15px;
+}
+
+/*KIS*/
+
+.kis {
+    background-color: #28564a;
+
+    font-family: 'Cinzel', serif;
+}
+
+.kisotzif {
+    background-color: #28564a;
+    padding: 30px;
+    position: relative;
+}
+
+.kisphoto {
+    padding: 43px 10px 0 50px;
+    height: 105px;
+    width: 105px;
+    position: absolute;/*месторасположение фотографии выстраивается заново*/
+    top: 0; /*элементы, которые находятся внизу помогают ему в этом*/
+    left: 0;
+    z-index: 1; /* положение позиционированного элемента*/
+}
+
+.kistext {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(17, 17, 17);
+    padding: 5px 50px 0px 150px;
+    text-align: justify;
+}
+
+.kissauthor {
+    color: rgb(17, 17, 17);
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 30px 0px 150px;
+}
+
+.kissauthor:before {
+    display: inline-block;
+    content: ""; /*Визуализатор, который почему-то не включается в дерево, а идёт как просто отображение на мониторе*/
+    vertical-align: middle;/*описывает вертикальное позиционирование строчных (inline)*/
+    width: 40px;
+    height: 3px;
+    background-color: black;
+}
+
+/*otzif*/
+
+.otzif {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 50;
+    padding-bottom: 85px;
+    border: 1px solid rgb(20, 62, 36); /* Толщина рамки в пикселах, тип границы (в данном случае сплошная линия) и цвет линии */
+    padding: 5px; /* Расстояние от текста до рамки */
+    width: 700px;
+border-top:3px solid #2e5948;
+border-bottom: solid 3px #2e5948;
+padding-left: 260px;
+padding-right: 260px;
+    margin-left: 140px;
+    margin-bottom: 75px;
+}
+
+/* Testimonial */
+.testimonial-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px; /*отступ между таблицами*/
+    margin-bottom: 36px;
+    max-width: 1330px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-top: 30px;
+}
+
+.testimonial {
+    padding: 40px;
+    background-color: #28564a;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.testimonial span {
+    padding-bottom: .75em;
+    font-size:24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.testimonial-data,
+.testimonial-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.testimonial__img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.testimonial-info {
+    margin-top: 28px;
+}
+
+.testimonial__name1 {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 200px;
+}
+
+.testimonial__name2 {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 100px;
+}
+
+.testimonial__position1 {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin-left: 170px;
+}
+
+.testimonial__position2 {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.5;
+    margin-left: 150px;
+}
+
+.testimonial__list {
+    gap: 4px;
+}
+
+.testimonial__list .rating__item {
+    align-self: flex-end;
+    color: #FAA61A;
+    font-size: 20px;
+}
+
+/*GRU*/
+
+
+.gruzagal {
+    align-items: center;
+    margin-top: 150px;
+    justify-content: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: -4px -4px 0px #14381c;
+    background: repeating-linear-gradient(45deg, #000000, #195a3d 1px, white 2px, white 3px);
+    -webkit-background-clip: text;
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+
+/**/
+
+.circle {
+    padding: 100px 150px 0px 150px;
+}
+
+.circleou {
+    justify-content: space-between;
+    display: flex;
+}
+
+.circletext {
+    padding: 70px 5px 5px 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.circlepi {
+    background-color: #435f46;
+    opacity: 0.9;
+    width: 220px; /* задаете свои размеры */
+    height: 220px;
+    border-radius: 50%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border: 4px dotted #fff;/*Дотед это пунктир, бокс шадов определяет скок и чего*/
+    box-shadow: 0 0 0 5px  #28564a;
+}
+
+.circlepic {
+    background-color: #435f46;
+    opacity: 0.9;
+    width: 220px; /* задаете свои размеры */
+    height: 220px;
+    border-radius: 50%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border: 4px dotted #fff;
+    box-shadow: 0 0 0 5px  #28564a;
+}
+
+.circlepict {
+    opacity: 0.9;
+    width: 220px; /* задаете свои размеры */
+    height: 220px;
+    border-radius: 50%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border: 4px dotted #fff;
+    box-shadow: 0 0 0 5px  #28564a;
+}
+
+/*circlepov*/
+
+.circlepov {
+    padding: 80px 350px 0px 350px;
+}
+
+.circleoupov {
+    justify-content: space-between;
+    display: flex;
+}
+
+.circletextpov {
+    padding: 70px 5px 5px 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.circlepipov {
+    background-color: #435f46;
+    opacity: 0.9;
+    width: 220px; /* задаете свои размеры */
+    height: 220px;
+    border-radius: 50%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border: 4px dotted #fff;/*Дотед это пунктир, бокс шадов определяет скок и чего*/
+    box-shadow: 0 0 0 5px  #28564a;
+}
+
+.circlepicpov {
+    background-color: #435f46;
+    opacity: 0.9;
+    width: 220px; /* задаете свои размеры */
+    height: 220px;
+    border-radius: 50%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border: 4px dotted #fff;/*Дотед это пунктир, бокс шадов определяет скок и чего*/
+    box-shadow: 0 0 0 5px  #28564a;
+}
+
+/*CLOSE*/
+
+.close {
+    padding: 100px 0px 0px 0px;
+    color: rgba(240, 248, 255, 0.889);
+    
+}
+
+.closemyr {
+    background-color: #435f46;
+    display: flex; /*Для того, чтобы все слова шли в одну строчку, а не в разброс*/ /*меню становится по центру блока*/
+    justify-content: space-between; /*слова находятся в разных сторонах*/
+}
+
+.closesect {
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+.closesecttext {
+    font-size: 35px;
+    font-weight: 15px;
+    margin-bottom: 15px;
+}
+
+.closesectbutton {
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.889);
+    display: block;
+    width: max-content;
+}
+
+.closesectbutton:hover {
+    color: black;
+    transition: color .2s linear;
+}
+
+.closesectbuttonn {
+    padding-top: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.889);
+    display: block;
+    width: max-content;
+}
+
+.closesectbuttonn:hover {
+    color: black;
+    transition: color .2s linear;
+}
+
+.closesectocn {
+    padding-top: 150px;
+}
+
+.closeinfo {
+    margin-left: 50px;
+    padding-top: 25px;
+}
+
+.closeinfoh4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.closeinfobtn{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.552);
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.closeinfobtn:hover {
+    color: black;
+    transition: color .2s linear;
+}
+
+.close_intro {
+    margin-left: 50px;
+    padding-top: 25px;
+    padding-right: 150px;
+
+}
+
+.close_introh5 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.close_introtext {
+    color: rgba(240, 248, 255, 0.552);
+}
+
+.close_introbtn {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(240, 248, 255, 0.552);
+}
+
+.close_introbtn:hover {
+    color: black;
+    transition: color .2s linear;
+}
+
